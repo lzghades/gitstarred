@@ -8,20 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		0F3D740D2005E0AA00B578E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D740C2005E0AA00B578E3 /* AppDelegate.swift */; };
-		0F3D740F2005E0AA00B578E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D740E2005E0AA00B578E3 /* ViewController.swift */; };
 		0F3D74112005E0AA00B578E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F3D74102005E0AA00B578E3 /* Assets.xcassets */; };
 		0F3D74142005E0AA00B578E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3D74122005E0AA00B578E3 /* Main.storyboard */; };
+		0F3D74202005F76C00B578E3 /* StarredModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D741F2005F76C00B578E3 /* StarredModel.swift */; };
+		0F3D74222005F7A000B578E3 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D74212005F7A000B578E3 /* BaseService.swift */; };
+		0F3D74242005FA9C00B578E3 /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D74232005FA9C00B578E3 /* BaseDAO.swift */; };
+		0F3D74262006042600B578E3 /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D74252006042600B578E3 /* UserDAO.swift */; };
+		0F3D74282006149500B578E3 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D74272006149500B578E3 /* UserService.swift */; };
+		0F648253200F1CD300C2A4EF /* BaseSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F648252200F1CD300C2A4EF /* BaseSplitViewController.swift */; };
+		0F648255200F1E3600C2A4EF /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F648254200F1E3600C2A4EF /* PreferenceViewController.swift */; };
+		0F648257200F24F700C2A4EF /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F648256200F24F700C2A4EF /* PreferenceWindowController.swift */; };
+		0FA9A1982015804C00769483 /* LeftPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9A1972015804C00769483 /* LeftPanelViewController.swift */; };
+		0FA9A19A2015CE1F00769483 /* GSOutlineCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9A1992015CE1F00769483 /* GSOutlineCellView.swift */; };
+		0FB784E6200E023000030B7A /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB784E5200E023000030B7A /* BaseWindowController.swift */; };
+		0FBA4FF4201187470076B5DA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA4FF3201187470076B5DA /* UserModel.swift */; };
+		0FBA4FF6201191FA0076B5DA /* GSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA4FF5201191FA0076B5DA /* GSButton.swift */; };
+		0FBA4FF8201192540076B5DA /* GSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA4FF7201192540076B5DA /* GSTextField.swift */; };
+		0FBA4FFA2011F44B0076B5DA /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA4FF92011F44B0076B5DA /* GitHubService.swift */; };
+		0FE865FE20106F9A002CF369 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE865FD20106F9A002CF369 /* Constants.swift */; };
+		0FE866012010A23C002CF369 /* GSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE866002010A23C002CF369 /* GSLabel.swift */; };
 		741172F806D5CC60A3AE6D93 /* Pods_GitStarred.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5C7BEDA6A53B58890DD9EF /* Pods_GitStarred.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F3D74092005E0AA00B578E3 /* GitStarred.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitStarred.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3D740C2005E0AA00B578E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0F3D740E2005E0AA00B578E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0F3D74102005E0AA00B578E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F3D74132005E0AA00B578E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F3D74152005E0AA00B578E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F3D74162005E0AA00B578E3 /* GitStarred.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitStarred.entitlements; sourceTree = "<group>"; };
+		0F3D741F2005F76C00B578E3 /* StarredModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarredModel.swift; sourceTree = "<group>"; };
+		0F3D74212005F7A000B578E3 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		0F3D74232005FA9C00B578E3 /* BaseDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDAO.swift; sourceTree = "<group>"; };
+		0F3D74252006042600B578E3 /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
+		0F3D74272006149500B578E3 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		0F648252200F1CD300C2A4EF /* BaseSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSplitViewController.swift; sourceTree = "<group>"; };
+		0F648254200F1E3600C2A4EF /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
+		0F648256200F24F700C2A4EF /* PreferenceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
+		0FA9A1972015804C00769483 /* LeftPanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftPanelViewController.swift; sourceTree = "<group>"; };
+		0FA9A1992015CE1F00769483 /* GSOutlineCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSOutlineCellView.swift; sourceTree = "<group>"; };
+		0FB784E5200E023000030B7A /* BaseWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
+		0FBA4FF3201187470076B5DA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		0FBA4FF5201191FA0076B5DA /* GSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSButton.swift; sourceTree = "<group>"; };
+		0FBA4FF7201192540076B5DA /* GSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSTextField.swift; sourceTree = "<group>"; };
+		0FBA4FF92011F44B0076B5DA /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
+		0FE865FD20106F9A002CF369 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0FE866002010A23C002CF369 /* GSLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSLabel.swift; sourceTree = "<group>"; };
 		163EC300458E3642F5FFF6F5 /* Pods-GitStarred.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitStarred.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitStarred/Pods-GitStarred.release.xcconfig"; sourceTree = "<group>"; };
 		4A5C7BEDA6A53B58890DD9EF /* Pods_GitStarred.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitStarred.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E8E6277D27A16A993C9713 /* Pods-GitStarred.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitStarred.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitStarred/Pods-GitStarred.debug.xcconfig"; sourceTree = "<group>"; };
@@ -39,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F0B5B462008AE1E00ED7A76 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				0FB784E5200E023000030B7A /* BaseWindowController.swift */,
+				0F648256200F24F700C2A4EF /* PreferenceWindowController.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
 		0F3D74002005E0AA00B578E3 = {
 			isa = PBXGroup;
 			children = (
@@ -60,14 +101,77 @@
 		0F3D740B2005E0AA00B578E3 /* GitStarred */ = {
 			isa = PBXGroup;
 			children = (
+				0FE865FF20109FC2002CF369 /* Component */,
+				0FE865FC20106F73002CF369 /* Util */,
+				0F0B5B462008AE1E00ED7A76 /* Window */,
+				0FA41C61200768DF004F2B1E /* Controller */,
+				0F3D741E2005E30700B578E3 /* DAO */,
+				0F3D741D2005E2F600B578E3 /* Service */,
+				0F3D741C2005E2E800B578E3 /* Model */,
 				0F3D740C2005E0AA00B578E3 /* AppDelegate.swift */,
-				0F3D740E2005E0AA00B578E3 /* ViewController.swift */,
 				0F3D74102005E0AA00B578E3 /* Assets.xcassets */,
 				0F3D74122005E0AA00B578E3 /* Main.storyboard */,
 				0F3D74152005E0AA00B578E3 /* Info.plist */,
 				0F3D74162005E0AA00B578E3 /* GitStarred.entitlements */,
 			);
 			path = GitStarred;
+			sourceTree = "<group>";
+		};
+		0F3D741C2005E2E800B578E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D741F2005F76C00B578E3 /* StarredModel.swift */,
+				0FBA4FF3201187470076B5DA /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F3D741D2005E2F600B578E3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D74212005F7A000B578E3 /* BaseService.swift */,
+				0F3D74272006149500B578E3 /* UserService.swift */,
+				0FBA4FF92011F44B0076B5DA /* GitHubService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0F3D741E2005E30700B578E3 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D74232005FA9C00B578E3 /* BaseDAO.swift */,
+				0F3D74252006042600B578E3 /* UserDAO.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		0FA41C61200768DF004F2B1E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0F648252200F1CD300C2A4EF /* BaseSplitViewController.swift */,
+				0F648254200F1E3600C2A4EF /* PreferenceViewController.swift */,
+				0FA9A1972015804C00769483 /* LeftPanelViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0FE865FC20106F73002CF369 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0FE865FD20106F9A002CF369 /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		0FE865FF20109FC2002CF369 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				0FE866002010A23C002CF369 /* GSLabel.swift */,
+				0FBA4FF5201191FA0076B5DA /* GSButton.swift */,
+				0FBA4FF7201192540076B5DA /* GSTextField.swift */,
+				0FA9A1992015CE1F00769483 /* GSOutlineCellView.swift */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 		28E90DC9B3EB21C5B9231604 /* Frameworks */ = {
@@ -123,6 +227,11 @@
 					0F3D74082005E0AA00B578E3 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -185,6 +294,7 @@
 				"${BUILT_PRODUCTS_DIR}/MoyaSugar/MoyaSugar.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -195,6 +305,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoyaSugar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,8 +338,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F3D740F2005E0AA00B578E3 /* ViewController.swift in Sources */,
+				0FBA4FF8201192540076B5DA /* GSTextField.swift in Sources */,
+				0F3D74282006149500B578E3 /* UserService.swift in Sources */,
+				0FBA4FFA2011F44B0076B5DA /* GitHubService.swift in Sources */,
+				0FE865FE20106F9A002CF369 /* Constants.swift in Sources */,
+				0F3D74262006042600B578E3 /* UserDAO.swift in Sources */,
+				0FBA4FF6201191FA0076B5DA /* GSButton.swift in Sources */,
+				0FA9A1982015804C00769483 /* LeftPanelViewController.swift in Sources */,
+				0F648257200F24F700C2A4EF /* PreferenceWindowController.swift in Sources */,
+				0F648253200F1CD300C2A4EF /* BaseSplitViewController.swift in Sources */,
+				0FBA4FF4201187470076B5DA /* UserModel.swift in Sources */,
+				0FB784E6200E023000030B7A /* BaseWindowController.swift in Sources */,
+				0F648255200F1E3600C2A4EF /* PreferenceViewController.swift in Sources */,
+				0F3D74222005F7A000B578E3 /* BaseService.swift in Sources */,
+				0F3D74202005F76C00B578E3 /* StarredModel.swift in Sources */,
 				0F3D740D2005E0AA00B578E3 /* AppDelegate.swift in Sources */,
+				0FA9A19A2015CE1F00769483 /* GSOutlineCellView.swift in Sources */,
+				0FE866012010A23C002CF369 /* GSLabel.swift in Sources */,
+				0F3D74242005FA9C00B578E3 /* BaseDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

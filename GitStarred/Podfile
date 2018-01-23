@@ -11,4 +11,5 @@ target 'GitStarred' do
   pod 'MoyaSugar', '~> 1.0'
   pod 'Moya-ObjectMapper'
   pod 'Alamofire', '~> 4.5'
+  pod 'SQLite.swift', '~> 0.11'
 end
