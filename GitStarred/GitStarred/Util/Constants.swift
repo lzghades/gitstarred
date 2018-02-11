@@ -12,3 +12,10 @@ struct GitHubUrls {
     static let baseDomain = "https://github.com"
     static let setting = "\(GitHubUrls.baseDomain)/settings/profile"
 }
+
+struct Common {
+    static let iconItemHeight = 32.0
+    static let iconItemIconSize = 24.0
+    static let cellViewIdentifier = "GSCellView"
+    static let cellViewPadding = 10.0
+}

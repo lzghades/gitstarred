@@ -25,7 +25,7 @@ class GitHubService {
                     let starreds = try resp.mapArray(StarredModel.self)
                     success(starreds)
                 } catch {
-                    
+                    print(error)
                 }
             case let .failure(error):
                 print(error)

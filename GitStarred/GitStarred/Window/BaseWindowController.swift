@@ -9,9 +9,11 @@
 import Cocoa
 
 class BaseWindowController: NSWindowController {
-
+    
     override func windowDidLoad() {
         super.windowDidLoad()
+        
+        let appDelegate = NSApp.delegate as! AppDelegate
+        appDelegate.mainWindow = self.window
     }
-
 }

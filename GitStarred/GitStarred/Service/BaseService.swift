@@ -46,6 +46,12 @@ extension GitHubAPI: SugarTargetType {
     
     var parameters: Parameters? {
         switch self {
+        case .starred:
+            let now = Date()
+            
+            return [
+                "t": Int(now.timeIntervalSince1970)
+            ]
         default:
             return nil
         }

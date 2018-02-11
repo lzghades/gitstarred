@@ -10,8 +10,9 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+    var mainWindow: NSWindow!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
@@ -23,13 +24,31 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         let menu = NSMenu()
         
-        menu.addItem(NSMenuItem(title: "激活GitStarred", action: #selector(activeWindow), keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "Toggle GitStarred", action: #selector(activeWindow), keyEquivalent: ""))
         menu.addItem(NSMenuItem.separator())
-        menu.addItem(NSMenuItem(title: "我的GitHub", action: #selector(gotoGitHub), keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "My GitHub", action: #selector(gotoGitHub), keyEquivalent: ""))
         menu.addItem(NSMenuItem.separator())
-        menu.addItem(NSMenuItem(title: "退出", action: #selector(NSApplication.terminate(_:)), keyEquivalent: ""))
+        menu.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: ""))
         
         statusItem.menu = menu
+        
+        guard let screenSize = NSScreen.main?.frame.size else {
+            return
+        }
+        
+        let w = screenSize.width * 0.8
+        let h = screenSize.height * 0.8
+        let x = (screenSize.width - w) / 2
+        let y = (screenSize.height - h) / 2
+        let frame = NSRect(x: x, y: y, width: w, height: h)
+
+        mainWindow.setFrame(frame, display: true)
+        mainWindow.showsToolbarButton = true
+        mainWindow.titlebarAppearsTransparent = true
+        mainWindow.titleVisibility = .hidden
+        mainWindow.styleMask = NSWindow.StyleMask(rawValue:  mainWindow.styleMask.rawValue | NSWindow.StyleMask.fullSizeContentView.rawValue)
+        mainWindow.title = ""
+        mainWindow.isReleasedWhenClosed = false
     }
     
     @objc func activeWindow() {
@@ -42,6 +61,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
+    }
+    
+    func applicationShouldHandleReopen(_ sender: NSApplication, hasVisibleWindows flag: Bool) -> Bool {
+        mainWindow.makeKeyAndOrderFront(self)
+        return true
     }
 }
 

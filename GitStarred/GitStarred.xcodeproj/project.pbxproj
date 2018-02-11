@@ -7,6 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F1AD951202A9481005CFB38 /* PreferenceUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1AD950202A9481005CFB38 /* PreferenceUserView.swift */; };
+		0F1AD953202A9A9A005CFB38 /* PreferenceShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1AD952202A9A9A005CFB38 /* PreferenceShortcutsView.swift */; };
+		0F1AD955202AE727005CFB38 /* GSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1AD954202AE727005CFB38 /* GSButton.swift */; };
+		0F2955EA20216CBA00AFF8E2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F2955C520216CBA00AFF8E2 /* Info.plist */; };
+		0F2955EB20216CBA00AFF8E2 /* KRActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955C620216CBA00AFF8E2 /* KRActivityIndicatorAnimationAudioEqualizer.swift */; };
+		0F2955EC20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955C720216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallBeat.swift */; };
+		0F2955ED20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955C820216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotate.swift */; };
+		0F2955EE20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955C920216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotateMultiple.swift */; };
+		0F2955EF20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955CA20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotatePulse.swift */; };
+		0F2955F020216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallGridBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955CB20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallGridBeat.swift */; };
+		0F2955F120216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallGridPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955CC20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallGridPulse.swift */; };
+		0F2955F220216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955CD20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulse.swift */; };
+		0F2955F320216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulseRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955CE20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulseRise.swift */; };
+		0F2955F420216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulseSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955CF20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulseSync.swift */; };
+		0F2955F520216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955D020216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallRotate.swift */; };
+		0F2955F620216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallRotateChase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955D120216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallRotateChase.swift */; };
+		0F2955F720216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955D220216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScale.swift */; };
+		0F2955F820216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955D320216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleMultiple.swift */; };
+		0F2955F920216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleRipple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955D420216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleRipple.swift */; };
+		0F2955FA20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955D520216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleRippleMultiple.swift */; };
+		0F2955FB20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955D620216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallSpinFadeLoader.swift */; };
+		0F2955FC20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955D720216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallTrianglePath.swift */; };
+		0F2955FD20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955D820216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallZigZag.swift */; };
+		0F2955FE20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955D920216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallZigZagDeflect.swift */; };
+		0F2955FF20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955DA20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBlank.swift */; };
+		0F29560020216CBA00AFF8E2 /* KRActivityIndicatorAnimationCubeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955DB20216CBA00AFF8E2 /* KRActivityIndicatorAnimationCubeTransition.swift */; };
+		0F29560120216CBA00AFF8E2 /* KRActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955DC20216CBA00AFF8E2 /* KRActivityIndicatorAnimationDelegate.swift */; };
+		0F29560220216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955DD20216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScale.swift */; };
+		0F29560320216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScaleParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955DE20216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScaleParty.swift */; };
+		0F29560420216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScalePulseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955DF20216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScalePulseOut.swift */; };
+		0F29560520216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955E020216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScalePulseOutRapid.swift */; };
+		0F29560620216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955E120216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
+		0F29560720216CBA00AFF8E2 /* KRActivityIndicatorAnimationOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955E220216CBA00AFF8E2 /* KRActivityIndicatorAnimationOrbit.swift */; };
+		0F29560820216CBA00AFF8E2 /* KRActivityIndicatorAnimationPacman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955E320216CBA00AFF8E2 /* KRActivityIndicatorAnimationPacman.swift */; };
+		0F29560920216CBA00AFF8E2 /* KRActivityIndicatorAnimationSemiCircleSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955E420216CBA00AFF8E2 /* KRActivityIndicatorAnimationSemiCircleSpin.swift */; };
+		0F29560A20216CBA00AFF8E2 /* KRActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955E520216CBA00AFF8E2 /* KRActivityIndicatorAnimationSquareSpin.swift */; };
+		0F29560B20216CBA00AFF8E2 /* KRActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955E620216CBA00AFF8E2 /* KRActivityIndicatorAnimationTriangleSkewSpin.swift */; };
+		0F29560C20216CBA00AFF8E2 /* KRActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955E720216CBA00AFF8E2 /* KRActivityIndicatorShape.swift */; };
+		0F29560D20216CBA00AFF8E2 /* KRActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955E920216CBA00AFF8E2 /* KRActivityIndicatorView.swift */; };
 		0F3D740D2005E0AA00B578E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D740C2005E0AA00B578E3 /* AppDelegate.swift */; };
 		0F3D74112005E0AA00B578E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F3D74102005E0AA00B578E3 /* Assets.xcassets */; };
 		0F3D74142005E0AA00B578E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3D74122005E0AA00B578E3 /* Main.storyboard */; };
@@ -15,22 +54,73 @@
 		0F3D74242005FA9C00B578E3 /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D74232005FA9C00B578E3 /* BaseDAO.swift */; };
 		0F3D74262006042600B578E3 /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D74252006042600B578E3 /* UserDAO.swift */; };
 		0F3D74282006149500B578E3 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D74272006149500B578E3 /* UserService.swift */; };
-		0F648253200F1CD300C2A4EF /* BaseSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F648252200F1CD300C2A4EF /* BaseSplitViewController.swift */; };
-		0F648255200F1E3600C2A4EF /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F648254200F1E3600C2A4EF /* PreferenceViewController.swift */; };
+		0F42786B202BE9740099EF01 /* SessionDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42786A202BE9740099EF01 /* SessionDAO.swift */; };
+		0F42786D202BED6F0099EF01 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42786C202BED6F0099EF01 /* SessionService.swift */; };
+		0F4E89002019BA8F00D22BCF /* GSIconItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E88FF2019BA8F00D22BCF /* GSIconItem.swift */; };
 		0F648257200F24F700C2A4EF /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F648256200F24F700C2A4EF /* PreferenceWindowController.swift */; };
-		0FA9A1982015804C00769483 /* LeftPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9A1972015804C00769483 /* LeftPanelViewController.swift */; };
-		0FA9A19A2015CE1F00769483 /* GSOutlineCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA9A1992015CE1F00769483 /* GSOutlineCellView.swift */; };
+		0F73B072201EE5DA00FB1D42 /* IconItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73B071201EE5DA00FB1D42 /* IconItemDelegate.swift */; };
+		0FB529AE202DEAEA00B08939 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0FB529AD202DEAEA00B08939 /* readme.txt */; };
+		0FB5D5BE2020478D00DDC5E8 /* GSCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB5D5BD2020478D00DDC5E8 /* GSCellView.swift */; };
 		0FB784E6200E023000030B7A /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB784E5200E023000030B7A /* BaseWindowController.swift */; };
 		0FBA4FF4201187470076B5DA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA4FF3201187470076B5DA /* UserModel.swift */; };
-		0FBA4FF6201191FA0076B5DA /* GSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA4FF5201191FA0076B5DA /* GSButton.swift */; };
+		0FBA4FF6201191FA0076B5DA /* GSIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA4FF5201191FA0076B5DA /* GSIconButton.swift */; };
 		0FBA4FF8201192540076B5DA /* GSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA4FF7201192540076B5DA /* GSTextField.swift */; };
 		0FBA4FFA2011F44B0076B5DA /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA4FF92011F44B0076B5DA /* GitHubService.swift */; };
+		0FE52E5820298A8500C86F89 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE52E5720298A8500C86F89 /* AuthViewController.swift */; };
+		0FE52E5A2029F7CE00C86F89 /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE52E592029F7CE00C86F89 /* SessionModel.swift */; };
+		0FE52E5C2029F89700C86F89 /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE52E5B2029F89700C86F89 /* TagModel.swift */; };
+		0FE52E5E2029F8C300C86F89 /* TagStarredRelaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE52E5D2029F8C300C86F89 /* TagStarredRelaModel.swift */; };
+		0FE7EFED201862E80020FC4E /* LeftPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE7EFEC201862E80020FC4E /* LeftPanelView.swift */; };
+		0FE7EFEF2018645F0020FC4E /* MiddlePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE7EFEE2018645F0020FC4E /* MiddlePanelView.swift */; };
+		0FE7EFF1201865000020FC4E /* RightPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE7EFF0201865000020FC4E /* RightPanelView.swift */; };
 		0FE865FE20106F9A002CF369 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE865FD20106F9A002CF369 /* Constants.swift */; };
 		0FE866012010A23C002CF369 /* GSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE866002010A23C002CF369 /* GSLabel.swift */; };
+		0FF450E7201702DC007FCCAD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF450E6201702DC007FCCAD /* BaseViewController.swift */; };
+		0FF87A04201C8DD100369DA8 /* RefreshListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF87A03201C8DD100369DA8 /* RefreshListDelegate.swift */; };
 		741172F806D5CC60A3AE6D93 /* Pods_GitStarred.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5C7BEDA6A53B58890DD9EF /* Pods_GitStarred.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F1AD950202A9481005CFB38 /* PreferenceUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceUserView.swift; sourceTree = "<group>"; };
+		0F1AD952202A9A9A005CFB38 /* PreferenceShortcutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceShortcutsView.swift; sourceTree = "<group>"; };
+		0F1AD954202AE727005CFB38 /* GSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSButton.swift; sourceTree = "<group>"; };
+		0F2955C520216CBA00AFF8E2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F2955C620216CBA00AFF8E2 /* KRActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
+		0F2955C720216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallBeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallBeat.swift; sourceTree = "<group>"; };
+		0F2955C820216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallClipRotate.swift; sourceTree = "<group>"; };
+		0F2955C920216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
+		0F2955CA20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotatePulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallClipRotatePulse.swift; sourceTree = "<group>"; };
+		0F2955CB20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallGridBeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallGridBeat.swift; sourceTree = "<group>"; };
+		0F2955CC20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallGridPulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallGridPulse.swift; sourceTree = "<group>"; };
+		0F2955CD20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallPulse.swift; sourceTree = "<group>"; };
+		0F2955CE20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulseRise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallPulseRise.swift; sourceTree = "<group>"; };
+		0F2955CF20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulseSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallPulseSync.swift; sourceTree = "<group>"; };
+		0F2955D020216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallRotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallRotate.swift; sourceTree = "<group>"; };
+		0F2955D120216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallRotateChase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallRotateChase.swift; sourceTree = "<group>"; };
+		0F2955D220216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallScale.swift; sourceTree = "<group>"; };
+		0F2955D320216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallScaleMultiple.swift; sourceTree = "<group>"; };
+		0F2955D420216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleRipple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallScaleRipple.swift; sourceTree = "<group>"; };
+		0F2955D520216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleRippleMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallScaleRippleMultiple.swift; sourceTree = "<group>"; };
+		0F2955D620216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
+		0F2955D720216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallTrianglePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallTrianglePath.swift; sourceTree = "<group>"; };
+		0F2955D820216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallZigZag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallZigZag.swift; sourceTree = "<group>"; };
+		0F2955D920216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallZigZagDeflect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallZigZagDeflect.swift; sourceTree = "<group>"; };
+		0F2955DA20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBlank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBlank.swift; sourceTree = "<group>"; };
+		0F2955DB20216CBA00AFF8E2 /* KRActivityIndicatorAnimationCubeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationCubeTransition.swift; sourceTree = "<group>"; };
+		0F2955DC20216CBA00AFF8E2 /* KRActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
+		0F2955DD20216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationLineScale.swift; sourceTree = "<group>"; };
+		0F2955DE20216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScaleParty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationLineScaleParty.swift; sourceTree = "<group>"; };
+		0F2955DF20216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScalePulseOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationLineScalePulseOut.swift; sourceTree = "<group>"; };
+		0F2955E020216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScalePulseOutRapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationLineScalePulseOutRapid.swift; sourceTree = "<group>"; };
+		0F2955E120216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
+		0F2955E220216CBA00AFF8E2 /* KRActivityIndicatorAnimationOrbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationOrbit.swift; sourceTree = "<group>"; };
+		0F2955E320216CBA00AFF8E2 /* KRActivityIndicatorAnimationPacman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationPacman.swift; sourceTree = "<group>"; };
+		0F2955E420216CBA00AFF8E2 /* KRActivityIndicatorAnimationSemiCircleSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationSemiCircleSpin.swift; sourceTree = "<group>"; };
+		0F2955E520216CBA00AFF8E2 /* KRActivityIndicatorAnimationSquareSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationSquareSpin.swift; sourceTree = "<group>"; };
+		0F2955E620216CBA00AFF8E2 /* KRActivityIndicatorAnimationTriangleSkewSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationTriangleSkewSpin.swift; sourceTree = "<group>"; };
+		0F2955E720216CBA00AFF8E2 /* KRActivityIndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		0F2955E820216CBA00AFF8E2 /* KRActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRActivityIndicatorView.h; sourceTree = "<group>"; };
+		0F2955E920216CBA00AFF8E2 /* KRActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorView.swift; sourceTree = "<group>"; };
 		0F3D74092005E0AA00B578E3 /* GitStarred.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitStarred.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3D740C2005E0AA00B578E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F3D74102005E0AA00B578E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,18 +132,29 @@
 		0F3D74232005FA9C00B578E3 /* BaseDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDAO.swift; sourceTree = "<group>"; };
 		0F3D74252006042600B578E3 /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
 		0F3D74272006149500B578E3 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
-		0F648252200F1CD300C2A4EF /* BaseSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSplitViewController.swift; sourceTree = "<group>"; };
-		0F648254200F1E3600C2A4EF /* PreferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceViewController.swift; sourceTree = "<group>"; };
+		0F42786A202BE9740099EF01 /* SessionDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDAO.swift; sourceTree = "<group>"; };
+		0F42786C202BED6F0099EF01 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		0F4E88FF2019BA8F00D22BCF /* GSIconItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSIconItem.swift; sourceTree = "<group>"; };
 		0F648256200F24F700C2A4EF /* PreferenceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
-		0FA9A1972015804C00769483 /* LeftPanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftPanelViewController.swift; sourceTree = "<group>"; };
-		0FA9A1992015CE1F00769483 /* GSOutlineCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSOutlineCellView.swift; sourceTree = "<group>"; };
+		0F73B071201EE5DA00FB1D42 /* IconItemDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconItemDelegate.swift; sourceTree = "<group>"; };
+		0FB529AD202DEAEA00B08939 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		0FB5D5BD2020478D00DDC5E8 /* GSCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSCellView.swift; sourceTree = "<group>"; };
 		0FB784E5200E023000030B7A /* BaseWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
 		0FBA4FF3201187470076B5DA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		0FBA4FF5201191FA0076B5DA /* GSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSButton.swift; sourceTree = "<group>"; };
+		0FBA4FF5201191FA0076B5DA /* GSIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSIconButton.swift; sourceTree = "<group>"; };
 		0FBA4FF7201192540076B5DA /* GSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSTextField.swift; sourceTree = "<group>"; };
 		0FBA4FF92011F44B0076B5DA /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
+		0FE52E5720298A8500C86F89 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		0FE52E592029F7CE00C86F89 /* SessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
+		0FE52E5B2029F89700C86F89 /* TagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
+		0FE52E5D2029F8C300C86F89 /* TagStarredRelaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagStarredRelaModel.swift; sourceTree = "<group>"; };
+		0FE7EFEC201862E80020FC4E /* LeftPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftPanelView.swift; sourceTree = "<group>"; };
+		0FE7EFEE2018645F0020FC4E /* MiddlePanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddlePanelView.swift; sourceTree = "<group>"; };
+		0FE7EFF0201865000020FC4E /* RightPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightPanelView.swift; sourceTree = "<group>"; };
 		0FE865FD20106F9A002CF369 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0FE866002010A23C002CF369 /* GSLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSLabel.swift; sourceTree = "<group>"; };
+		0FF450E6201702DC007FCCAD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0FF87A03201C8DD100369DA8 /* RefreshListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshListDelegate.swift; sourceTree = "<group>"; };
 		163EC300458E3642F5FFF6F5 /* Pods-GitStarred.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitStarred.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitStarred/Pods-GitStarred.release.xcconfig"; sourceTree = "<group>"; };
 		4A5C7BEDA6A53B58890DD9EF /* Pods_GitStarred.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitStarred.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E8E6277D27A16A993C9713 /* Pods-GitStarred.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitStarred.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitStarred/Pods-GitStarred.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +181,58 @@
 			path = Window;
 			sourceTree = "<group>";
 		};
+		0F2955C320216CA600AFF8E2 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				0F2955C420216CBA00AFF8E2 /* KRActivityIndicatorView */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		0F2955C420216CBA00AFF8E2 /* KRActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				0F2955C520216CBA00AFF8E2 /* Info.plist */,
+				0F2955C620216CBA00AFF8E2 /* KRActivityIndicatorAnimationAudioEqualizer.swift */,
+				0F2955C720216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallBeat.swift */,
+				0F2955C820216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotate.swift */,
+				0F2955C920216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotateMultiple.swift */,
+				0F2955CA20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotatePulse.swift */,
+				0F2955CB20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallGridBeat.swift */,
+				0F2955CC20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallGridPulse.swift */,
+				0F2955CD20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulse.swift */,
+				0F2955CE20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulseRise.swift */,
+				0F2955CF20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulseSync.swift */,
+				0F2955D020216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallRotate.swift */,
+				0F2955D120216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallRotateChase.swift */,
+				0F2955D220216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScale.swift */,
+				0F2955D320216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleMultiple.swift */,
+				0F2955D420216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleRipple.swift */,
+				0F2955D520216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleRippleMultiple.swift */,
+				0F2955D620216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallSpinFadeLoader.swift */,
+				0F2955D720216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallTrianglePath.swift */,
+				0F2955D820216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallZigZag.swift */,
+				0F2955D920216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallZigZagDeflect.swift */,
+				0F2955DA20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBlank.swift */,
+				0F2955DB20216CBA00AFF8E2 /* KRActivityIndicatorAnimationCubeTransition.swift */,
+				0F2955DC20216CBA00AFF8E2 /* KRActivityIndicatorAnimationDelegate.swift */,
+				0F2955DD20216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScale.swift */,
+				0F2955DE20216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScaleParty.swift */,
+				0F2955DF20216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScalePulseOut.swift */,
+				0F2955E020216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScalePulseOutRapid.swift */,
+				0F2955E120216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineSpinFadeLoader.swift */,
+				0F2955E220216CBA00AFF8E2 /* KRActivityIndicatorAnimationOrbit.swift */,
+				0F2955E320216CBA00AFF8E2 /* KRActivityIndicatorAnimationPacman.swift */,
+				0F2955E420216CBA00AFF8E2 /* KRActivityIndicatorAnimationSemiCircleSpin.swift */,
+				0F2955E520216CBA00AFF8E2 /* KRActivityIndicatorAnimationSquareSpin.swift */,
+				0F2955E620216CBA00AFF8E2 /* KRActivityIndicatorAnimationTriangleSkewSpin.swift */,
+				0F2955E720216CBA00AFF8E2 /* KRActivityIndicatorShape.swift */,
+				0F2955E820216CBA00AFF8E2 /* KRActivityIndicatorView.h */,
+				0F2955E920216CBA00AFF8E2 /* KRActivityIndicatorView.swift */,
+			);
+			path = KRActivityIndicatorView;
+			sourceTree = "<group>";
+		};
 		0F3D74002005E0AA00B578E3 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +254,9 @@
 		0F3D740B2005E0AA00B578E3 /* GitStarred */ = {
 			isa = PBXGroup;
 			children = (
+				0FB529AC202DEACB00B08939 /* Docs */,
+				0F2955C320216CA600AFF8E2 /* Framework */,
+				0FF87A02201C8D9300369DA8 /* Delegate */,
 				0FE865FF20109FC2002CF369 /* Component */,
 				0FE865FC20106F73002CF369 /* Util */,
 				0F0B5B462008AE1E00ED7A76 /* Window */,
@@ -122,6 +278,9 @@
 			children = (
 				0F3D741F2005F76C00B578E3 /* StarredModel.swift */,
 				0FBA4FF3201187470076B5DA /* UserModel.swift */,
+				0FE52E592029F7CE00C86F89 /* SessionModel.swift */,
+				0FE52E5B2029F89700C86F89 /* TagModel.swift */,
+				0FE52E5D2029F8C300C86F89 /* TagStarredRelaModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -132,6 +291,7 @@
 				0F3D74212005F7A000B578E3 /* BaseService.swift */,
 				0F3D74272006149500B578E3 /* UserService.swift */,
 				0FBA4FF92011F44B0076B5DA /* GitHubService.swift */,
+				0F42786C202BED6F0099EF01 /* SessionService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -141,6 +301,7 @@
 			children = (
 				0F3D74232005FA9C00B578E3 /* BaseDAO.swift */,
 				0F3D74252006042600B578E3 /* UserDAO.swift */,
+				0F42786A202BE9740099EF01 /* SessionDAO.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -148,11 +309,23 @@
 		0FA41C61200768DF004F2B1E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0F648252200F1CD300C2A4EF /* BaseSplitViewController.swift */,
-				0F648254200F1E3600C2A4EF /* PreferenceViewController.swift */,
-				0FA9A1972015804C00769483 /* LeftPanelViewController.swift */,
+				0FF450E6201702DC007FCCAD /* BaseViewController.swift */,
+				0FE7EFEC201862E80020FC4E /* LeftPanelView.swift */,
+				0FE7EFEE2018645F0020FC4E /* MiddlePanelView.swift */,
+				0FE7EFF0201865000020FC4E /* RightPanelView.swift */,
+				0FE52E5720298A8500C86F89 /* AuthViewController.swift */,
+				0F1AD950202A9481005CFB38 /* PreferenceUserView.swift */,
+				0F1AD952202A9A9A005CFB38 /* PreferenceShortcutsView.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		0FB529AC202DEACB00B08939 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				0FB529AD202DEAEA00B08939 /* readme.txt */,
+			);
+			path = Docs;
 			sourceTree = "<group>";
 		};
 		0FE865FC20106F73002CF369 /* Util */ = {
@@ -167,11 +340,22 @@
 			isa = PBXGroup;
 			children = (
 				0FE866002010A23C002CF369 /* GSLabel.swift */,
-				0FBA4FF5201191FA0076B5DA /* GSButton.swift */,
+				0FBA4FF5201191FA0076B5DA /* GSIconButton.swift */,
 				0FBA4FF7201192540076B5DA /* GSTextField.swift */,
-				0FA9A1992015CE1F00769483 /* GSOutlineCellView.swift */,
+				0F4E88FF2019BA8F00D22BCF /* GSIconItem.swift */,
+				0FB5D5BD2020478D00DDC5E8 /* GSCellView.swift */,
+				0F1AD954202AE727005CFB38 /* GSButton.swift */,
 			);
 			path = Component;
+			sourceTree = "<group>";
+		};
+		0FF87A02201C8D9300369DA8 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				0FF87A03201C8DD100369DA8 /* RefreshListDelegate.swift */,
+				0F73B071201EE5DA00FB1D42 /* IconItemDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 		28E90DC9B3EB21C5B9231604 /* Frameworks */ = {
@@ -260,6 +444,8 @@
 			files = (
 				0F3D74112005E0AA00B578E3 /* Assets.xcassets in Resources */,
 				0F3D74142005E0AA00B578E3 /* Main.storyboard in Resources */,
+				0FB529AE202DEAEA00B08939 /* readme.txt in Resources */,
+				0F2955EA20216CBA00AFF8E2 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,22 +526,70 @@
 			files = (
 				0FBA4FF8201192540076B5DA /* GSTextField.swift in Sources */,
 				0F3D74282006149500B578E3 /* UserService.swift in Sources */,
+				0F29560D20216CBA00AFF8E2 /* KRActivityIndicatorView.swift in Sources */,
+				0F29560320216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScaleParty.swift in Sources */,
+				0F2955F820216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
 				0FBA4FFA2011F44B0076B5DA /* GitHubService.swift in Sources */,
+				0F42786D202BED6F0099EF01 /* SessionService.swift in Sources */,
 				0FE865FE20106F9A002CF369 /* Constants.swift in Sources */,
+				0FF450E7201702DC007FCCAD /* BaseViewController.swift in Sources */,
+				0F2955F420216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulseSync.swift in Sources */,
 				0F3D74262006042600B578E3 /* UserDAO.swift in Sources */,
-				0FBA4FF6201191FA0076B5DA /* GSButton.swift in Sources */,
-				0FA9A1982015804C00769483 /* LeftPanelViewController.swift in Sources */,
+				0F29560420216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
+				0F2955EE20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
+				0F2955F720216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScale.swift in Sources */,
+				0F2955FB20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
+				0FE52E5A2029F7CE00C86F89 /* SessionModel.swift in Sources */,
+				0F42786B202BE9740099EF01 /* SessionDAO.swift in Sources */,
+				0FBA4FF6201191FA0076B5DA /* GSIconButton.swift in Sources */,
+				0F29560B20216CBA00AFF8E2 /* KRActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */,
+				0F2955F320216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulseRise.swift in Sources */,
+				0F2955F020216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallGridBeat.swift in Sources */,
 				0F648257200F24F700C2A4EF /* PreferenceWindowController.swift in Sources */,
-				0F648253200F1CD300C2A4EF /* BaseSplitViewController.swift in Sources */,
 				0FBA4FF4201187470076B5DA /* UserModel.swift in Sources */,
+				0F2955F120216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallGridPulse.swift in Sources */,
+				0F29560520216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
+				0F29560020216CBA00AFF8E2 /* KRActivityIndicatorAnimationCubeTransition.swift in Sources */,
+				0F2955F520216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallRotate.swift in Sources */,
+				0F4E89002019BA8F00D22BCF /* GSIconItem.swift in Sources */,
+				0F2955EC20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallBeat.swift in Sources */,
 				0FB784E6200E023000030B7A /* BaseWindowController.swift in Sources */,
-				0F648255200F1E3600C2A4EF /* PreferenceViewController.swift in Sources */,
+				0F2955FD20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallZigZag.swift in Sources */,
+				0FB5D5BE2020478D00DDC5E8 /* GSCellView.swift in Sources */,
+				0FE52E5C2029F89700C86F89 /* TagModel.swift in Sources */,
+				0F2955F220216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulse.swift in Sources */,
+				0F1AD953202A9A9A005CFB38 /* PreferenceShortcutsView.swift in Sources */,
+				0F2955FA20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
+				0F29560820216CBA00AFF8E2 /* KRActivityIndicatorAnimationPacman.swift in Sources */,
+				0F29560620216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
+				0F2955FF20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBlank.swift in Sources */,
+				0F29560C20216CBA00AFF8E2 /* KRActivityIndicatorShape.swift in Sources */,
+				0F2955EF20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */,
+				0FE7EFEF2018645F0020FC4E /* MiddlePanelView.swift in Sources */,
+				0F29560A20216CBA00AFF8E2 /* KRActivityIndicatorAnimationSquareSpin.swift in Sources */,
+				0F29560920216CBA00AFF8E2 /* KRActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
+				0F29560120216CBA00AFF8E2 /* KRActivityIndicatorAnimationDelegate.swift in Sources */,
+				0F29560220216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScale.swift in Sources */,
+				0F2955F620216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallRotateChase.swift in Sources */,
+				0FE7EFED201862E80020FC4E /* LeftPanelView.swift in Sources */,
+				0F1AD951202A9481005CFB38 /* PreferenceUserView.swift in Sources */,
+				0F2955F920216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleRipple.swift in Sources */,
+				0F2955EB20216CBA00AFF8E2 /* KRActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
 				0F3D74222005F7A000B578E3 /* BaseService.swift in Sources */,
 				0F3D74202005F76C00B578E3 /* StarredModel.swift in Sources */,
+				0FE52E5E2029F8C300C86F89 /* TagStarredRelaModel.swift in Sources */,
+				0F2955FE20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
 				0F3D740D2005E0AA00B578E3 /* AppDelegate.swift in Sources */,
-				0FA9A19A2015CE1F00769483 /* GSOutlineCellView.swift in Sources */,
+				0F2955ED20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotate.swift in Sources */,
+				0FE52E5820298A8500C86F89 /* AuthViewController.swift in Sources */,
+				0F29560720216CBA00AFF8E2 /* KRActivityIndicatorAnimationOrbit.swift in Sources */,
+				0FE7EFF1201865000020FC4E /* RightPanelView.swift in Sources */,
+				0F2955FC20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
+				0F73B072201EE5DA00FB1D42 /* IconItemDelegate.swift in Sources */,
 				0FE866012010A23C002CF369 /* GSLabel.swift in Sources */,
+				0FF87A04201C8DD100369DA8 /* RefreshListDelegate.swift in Sources */,
 				0F3D74242005FA9C00B578E3 /* BaseDAO.swift in Sources */,
+				0F1AD955202AE727005CFB38 /* GSButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

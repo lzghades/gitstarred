@@ -7,18 +7,28 @@
 //
 
 class UserService {
-    func login(name: String) {
-        let userDao = UserDAO()
-        _ = userDao.insert(_name: name)
+    
+    let userDao: UserDAO = UserDAO()
+    
+//    func login(name: String) {
+//        let userDao = UserDAO()
+//        _ = userDao.insert(_name: name)
+//    }
+//
+//    func logout(id: Int64) {
+//        let userDao = UserDAO()
+//        userDao.delete(_id: id)
+//    }
+    
+    func create(username: String) -> UserModel? {
+        return userDao.insert(name: username)
     }
     
-    func logout(id: Int64) {
-        let userDao = UserDAO()
-        userDao.delete(_id: id)
+    func getUser(username: String) -> UserModel? {
+        return userDao.findByName(name: username)
     }
     
-    func getUser() -> UserModel? {
-        let userDao = UserDAO()
-        return userDao.findFirst()
+    func getUser(id: Int64) -> UserModel? {
+        return userDao.findById(id: id)
     }
 }

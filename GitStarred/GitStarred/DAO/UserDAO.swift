@@ -28,12 +28,12 @@ class UserDAO {
         }
     }
     
-    func insert(_name: String) -> UserModel? {
+    func insert(name: String) -> UserModel? {
         do {
-            let insert = user.insert(name <- _name)
+            let insert = user.insert(self.name <- name)
             let rowid = try conn.run(insert)
             
-            return UserModel(_id: rowid, _name: _name)
+            return UserModel(id: rowid, name: name)
         } catch {
             print("Insert user error \(error)")
             
@@ -41,25 +41,27 @@ class UserDAO {
         }
     }
     
-    func delete(_id: Int64) {
+    func findById(id: Int64) -> UserModel? {
         do {
-            let _user = user.filter(id == _id)
-            try conn.run(_user.delete())
-        } catch {
-            print("Delete user error \(error)")
+            for user in try conn.prepare(user.filter(self.id == id)) {
+                return UserModel(id: user[self.id], name: user[self.name])
+            }
+        } catch  {
+            print("Find user error \(error)")
         }
+        
+        return nil
     }
     
-    func findFirst() -> UserModel? {
+    func findByName(name: String) -> UserModel? {
         do {
-            let query = user.select(id, name).limit(1)
-            guard let a = try conn.pluck(query) else {
-                return nil
+            for user in try conn.prepare(user.filter(self.name == name)) {
+                return UserModel(id: user[self.id], name: user[self.name])
             }
-
-            return UserModel(_id: try a.get(id), _name: try a.get(name))
-        } catch {
-            return nil
+        } catch  {
+            print("Find user error \(error)")
         }
+        
+        return nil
     }
 }

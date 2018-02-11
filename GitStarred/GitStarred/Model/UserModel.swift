@@ -12,8 +12,8 @@ class UserModel {
     var id: Int64!
     var name: String!
     
-    init(_id: Int64, _name: String) {
-        id = _id
-        name = _name
+    init(id: Int64, name: String) {
+        self.id = id
+        self.name = name
     }
 }
