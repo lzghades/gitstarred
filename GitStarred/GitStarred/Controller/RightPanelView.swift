@@ -9,9 +9,18 @@
 import Cocoa
 import WebKit
 
-class RightPanelView: NSView {
+class RightPanelView: NSView, ListDelegate {
     
+    var contentView: NSView!
+    var ownerName: GSLabel!
+    var repoName: GSLabel!
     var webView: WKWebView!
+    var indicatorView: KRActivityIndicatorView!
+    var tagView: GSTagView!
+    var currentUser: UserModel?
+    
+    let githubService: GitHubService = GitHubService()
+    let tagService: TagService = TagService()
 
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
@@ -35,22 +44,57 @@ class RightPanelView: NSView {
         configuration.preferences = preferences
         configuration.suppressesIncrementalRendering = false
         
-        webView = WKWebView(frame: .zero, configuration: configuration)
-        self.addSubview(webView)
-        webView.snp.makeConstraints { (make) in
-            make.top.equalTo(self).offset(0)
-            make.right.equalTo(self).offset(0)
-            make.bottom.equalTo(self).offset(0)
-            make.left.equalTo(self).offset(0)
+        contentView = NSView()
+        self.addSubview(contentView)
+        contentView.snp.makeConstraints { (make) in
+            make.top.left.equalTo(self).offset(20)
+            make.right.bottom.equalTo(self).offset(-20)
         }
         
-        var request = URLRequest(url: URL(string: "https://api.github.com/repos/lzghades/gitstarred/readme")!)
-        request.addValue("application/vnd.github.v3.html", forHTTPHeaderField: "Accept")
+        repoName = GSLabel(color: .black, fontSize: 16.0)
+        repoName.sizeToFit()
+        ownerName = GSLabel(color: .grayDark, fontSize: 12.0)
+        ownerName.sizeToFit()
+        contentView.addSubview(repoName)
+        contentView.addSubview(ownerName)
         
-//        webView.load(request)
+        repoName.snp.makeConstraints { (make) in
+            make.top.right.left.equalTo(contentView).offset(0)
+        }
+        
+        webView = WKWebView(frame: .zero, configuration: configuration)
+        webView.setValue(true, forKey: "drawsTransparentBackground")
+        contentView.addSubview(webView)
+        webView.snp.makeConstraints { (make) in
+            make.top.equalTo(contentView).offset(50)
+            make.right.bottom.left.equalTo(contentView).offset(0)
+        }
+        
+        indicatorView = KRActivityIndicatorView(frame: CGRect.zero)
+        indicatorView.color = NSColor(hue:0.00, saturation:0.00, brightness:0.15, alpha:1.00)
+        indicatorView.type = .ballClipRotatePulse
+        self.addSubview(indicatorView)
+        indicatorView.snp.makeConstraints { (make) in
+            make.center.equalTo(self)
+            make.size.equalTo(32)
+        }
     }
     
     required init?(coder decoder: NSCoder) {
         super.init(coder: decoder)
+    }
+    
+    func selectRepo(repo: RepoModel) {
+        contentView.isHidden = true
+        indicatorView.startAnimating()
+        githubService.getReadme(username: repo.ownerName, repoName: repo.name) { (data) in
+            self.webView.loadHTMLString(data, baseURL: URL(string: repo.url))
+            self.repoName.stringValue = repo.name
+            self.ownerName.stringValue = repo.ownerName
+            self.indicatorView.stopAnimating()
+            self.contentView.isHidden = false
+        }
+        
+        print(tagService.getTagsByRepoId(repoId: repo.id))
     }
 }

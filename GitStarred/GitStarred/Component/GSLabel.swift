@@ -12,7 +12,8 @@ import Cocoa
 enum FontColor {
     case grayBright
     case grayDark
-    case gray1
+    case gray
+    case black
 }
 
 class GSLabel: NSTextField {
@@ -50,8 +51,10 @@ class GSLabel: NSTextField {
             return NSColor(hue:0.83, saturation:0.01, brightness:0.57, alpha:1.00)
         case .grayBright:
             return NSColor(hue:0.00, saturation:0.00, brightness:0.87, alpha:1.00)
-        case .gray1:
+        case .gray:
             return NSColor(hue:0.60, saturation:0.03, brightness:0.70, alpha:1.00)
+        case .black:
+            return NSColor(hue:0.11, saturation:0.05, brightness:0.26, alpha:1.00)
         }
     }
 }

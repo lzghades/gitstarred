@@ -13,7 +13,8 @@ enum GitHubAPI {
     case url(URL)
     
     case zen
-    case starred(user: String)
+    case starred(user: String, page: Int)
+    case readme(user: String, repo: String)
 }
 
 extension GitHubAPI: SugarTargetType {
@@ -30,8 +31,10 @@ extension GitHubAPI: SugarTargetType {
             return .get("")
         case .zen:
             return .get("/zen")
-        case .starred(let user):
+        case .starred(let user, _):
             return .get("/users/\(user)/starred")
+        case .readme(let user, let repo):
+            return .get("/repos/\(user)/\(repo)/readme")
         }
     }
     
@@ -46,11 +49,13 @@ extension GitHubAPI: SugarTargetType {
     
     var parameters: Parameters? {
         switch self {
-        case .starred:
+        case .starred(_, let page):
             let now = Date()
             
             return [
-                "t": Int(now.timeIntervalSince1970)
+                "t": Int(now.timeIntervalSince1970),
+                "per_page": 100,
+                "page": page
             ]
         default:
             return nil
@@ -62,6 +67,11 @@ extension GitHubAPI: SugarTargetType {
     }
     
     var headers: [String: String]? {
-        return ["Content-type": "application/json", "Accept": "application/vnd.github.v3+json"]
+        switch self {
+        case .readme:
+            return ["Accept": "application/vnd.github.v3.html"]
+        default:
+            return ["Content-type": "application/json", "Accept": "application/vnd.github.v3+json"]
+        }
     }
 }

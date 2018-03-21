@@ -30,7 +30,7 @@ class SessionDAO {
 
     func delete() {
         do {
-            try conn.run(session.delete())
+            try conn!.run(session.delete())
         } catch {
             print("Delete session error \(error)")
         }
@@ -38,7 +38,7 @@ class SessionDAO {
 
     func get() -> SessionModel? {
         do {
-            if let query = try conn.pluck(session) {
+            if let query = try conn!.pluck(session) {
                 return SessionModel(id: query[self.id], userId: query[self.userId])
             }
         } catch {
@@ -50,9 +50,9 @@ class SessionDAO {
     
     func insert(userId: Int64) {
         do {
-            try conn.run(session.delete())
+            try conn!.run(session.delete())
             let insert = session.insert(self.userId <- userId)
-            try conn.run(insert)
+            try conn!.run(insert)
         } catch {
             print("Insert session error \(error)")
         }

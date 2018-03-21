@@ -8,6 +8,7 @@
 
 import Foundation
 
-protocol RefreshListDelegate {
-    func refreshList(finished: @escaping () -> Void)
+protocol SyncReposDelegate {
+    func loadRepos()
+    func sync(user: UserModel?)
 }

@@ -13,7 +13,6 @@ class GSIconItem: NSView {
     
     var buttonIcon: NSImageView!
     var buttonLabel: GSLabel!
-    var selected = false
     var delegate: IconItemDelegate?
 
     override func draw(_ dirtyRect: NSRect) {
@@ -25,7 +24,6 @@ class GSIconItem: NSView {
     convenience init(icon: NSImage, label: String, selected: Bool) {
         self.init(frame: NSRect(x: 0, y: 0, width: 0, height: Common.iconItemHeight))
         self.wantsLayer = true
-        self.selected = selected
         
         buttonIcon = NSImageView()
         buttonIcon.wantsLayer = true
@@ -55,33 +53,19 @@ class GSIconItem: NSView {
             make.top.equalTo(self).offset((CGFloat(Common.iconItemHeight) - buttonLabel.frame.size.height) / 2)
             make.left.equalTo(buttonIcon.snp.right).offset(6)
         }
-        
-        if (selected) {
-            doSelected()
-        }
     }
     
     override func mouseUp(with event: NSEvent) {
-        stateChange()
+        selected()
     }
     
-    func stateChange() {
-        if (selected) {
-            unDoSelected()
-        } else {
-            doSelected()
-        }
-    }
-    
-    private func doSelected() {
-        selected = true
+    func selected() {
         self.layer?.backgroundColor = NSColor(hue:0.00, saturation:0.00, brightness:0.19, alpha:1.00).cgColor
         
         delegate?.iconItemClick()
     }
     
-    private func unDoSelected() {
-        selected = false
+    func unselected() {
         self.layer?.backgroundColor = NSColor(hue:0.00, saturation:0.00, brightness:0.00, alpha:0.00).cgColor
     }
 }

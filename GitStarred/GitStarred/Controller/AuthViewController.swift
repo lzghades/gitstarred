@@ -14,6 +14,9 @@ class AuthViewController: NSViewController {
     var userTextField: GSTextField!
     var actionButton: GSButton!
     let bgColor: NSColor = NSColor(hue:0.00, saturation:0.00, brightness:0.16, alpha:1.00)
+    
+    var delegate: SyncReposDelegate?
+    let sessionService: SessionService = SessionService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,15 +25,15 @@ class AuthViewController: NSViewController {
         self.view.wantsLayer = true
         self.view.layer?.backgroundColor = bgColor.cgColor
         
-        titleLabel = GSLabel(color: .gray1, fontSize: 15.0, isBold: false)
-        titleLabel.stringValue = "Login with your name"
+        titleLabel = GSLabel(color: .gray, fontSize: 15.0, isBold: false)
+        titleLabel.stringValue = "Login With Your Name"
         self.view.addSubview(titleLabel)
         titleLabel.snp.makeConstraints { (make) in
             make.top.equalTo(self.view).offset(20)
             make.left.equalTo(self.view).offset(15)
         }
         
-        userTextField = GSTextField(placeholder: "username", borderColor: bgColor, radius: 15)
+        userTextField = GSTextField(placeholder: "Username", borderColor: bgColor, radius: 15)
         self.view.addSubview(userTextField)
         userTextField.snp.makeConstraints { (make) in
             make.top.equalTo(self.view).offset(60)
@@ -58,9 +61,9 @@ class AuthViewController: NSViewController {
     @objc func login() {
         let username = userTextField.stringValue.trimmingCharacters(in: .whitespacesAndNewlines)
         if (username.count > 0) {
-            let sessionService = SessionService()
-            sessionService.login(username: username)
+            let user = sessionService.login(username: username)
             
+            delegate?.sync(user: user)
             NSApp.mainWindow?.endSheet(self.view.window!)
         }
     }

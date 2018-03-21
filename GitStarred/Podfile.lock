@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.6.0)
+  - Kingfisher (4.6.1)
   - Moya (10.0.1):
     - Moya/Core (= 10.0.1)
   - Moya-ObjectMapper (2.5):
@@ -23,6 +24,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
+  - Kingfisher (~> 4.0)
   - Moya (~> 10.0)
   - Moya-ObjectMapper
   - MoyaSugar (~> 1.0)
@@ -31,6 +33,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
   Moya: 9e621707ff754eeb51ff3ec51a3d54e517c0733a
   Moya-ObjectMapper: 167adf69db0298bf3a19ea05cb9a16ee117c8ef5
   MoyaSugar: b64e677454f1a4b3745e1c5b16e1c9d1b109d04f
@@ -39,6 +42,6 @@ SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SQLite.swift: 3e3bee21da701b5b9f87c4a672cb54f233505692
 
-PODFILE CHECKSUM: 8eda5dedc0d365eb090da90998d4e467f011e793
+PODFILE CHECKSUM: bf8aeb45226a9f2bdfb7479987362e6903d5e6d4
 
 COCOAPODS: 1.3.1

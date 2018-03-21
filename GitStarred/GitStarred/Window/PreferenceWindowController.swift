@@ -60,7 +60,7 @@ class PreferenceWindowController: NSWindowController, NSToolbarDelegate {
         toolbarHeight = CGFloat(Size.height) - (window?.contentLayoutRect.height)!
         
         preferenceUserView = PreferenceUserView(toolbarHeight: toolbarHeight)
-        preferenceShortcutsView = PreferenceShortcutsView()
+        preferenceShortcutsView = PreferenceShortcutsView(toolbarHeight: toolbarHeight)
         
         self.window?.contentView = preferenceUserView
     }

@@ -14,6 +14,7 @@ class UserDAO {
     private let user = Table("user")
     private let id = Expression<Int64>("id")
     private let name = Expression<String>("name")
+    private let syncDate = Expression<Int64>("sync_date")
     
     init() {
         conn = BaseDAO.instance.conn
@@ -22,6 +23,7 @@ class UserDAO {
             try conn!.run(user.create(ifNotExists: true) { (table) in
                 table.column(id, primaryKey: true)
                 table.column(name, unique: true)
+                table.column(syncDate, defaultValue: Int64(Date().timeIntervalSince1970))
             })
         } catch {
             print("User table create error")
@@ -30,10 +32,11 @@ class UserDAO {
     
     func insert(name: String) -> UserModel? {
         do {
-            let insert = user.insert(self.name <- name)
-            let rowid = try conn.run(insert)
+            let now = Int64(Date().timeIntervalSince1970)
+            let insert = user.insert(self.name <- name, self.syncDate <- now)
+            let rowid = try conn!.run(insert)
             
-            return UserModel(id: rowid, name: name)
+            return UserModel(id: rowid, name: name, syncDate: now)
         } catch {
             print("Insert user error \(error)")
             
@@ -41,13 +44,22 @@ class UserDAO {
         }
     }
     
+    func updateSyncDate(id: Int64, date: Int64) {
+        do {
+            let user = self.user.filter(self.id == id)
+            try conn!.run(user.update(syncDate <- date))
+        } catch {
+            print("Update syncDate error \(error)")
+        }
+    }
+    
     func findById(id: Int64) -> UserModel? {
         do {
-            for user in try conn.prepare(user.filter(self.id == id)) {
-                return UserModel(id: user[self.id], name: user[self.name])
+            for user in try conn!.prepare(user.filter(self.id == id)) {
+                return UserModel(id: user[self.id], name: user[self.name], syncDate: user[self.syncDate])
             }
         } catch  {
-            print("Find user error \(error)")
+            print("Find user by id error \(error)")
         }
         
         return nil
@@ -55,11 +67,11 @@ class UserDAO {
     
     func findByName(name: String) -> UserModel? {
         do {
-            for user in try conn.prepare(user.filter(self.name == name)) {
-                return UserModel(id: user[self.id], name: user[self.name])
+            for user in try conn!.prepare(user.filter(self.name == name)) {
+                return UserModel(id: user[self.id], name: user[self.name], syncDate: user[self.syncDate])
             }
         } catch  {
-            print("Find user error \(error)")
+            print("Find user by name error \(error)")
         }
         
         return nil

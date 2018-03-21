@@ -7,15 +7,12 @@
 //
 
 import Cocoa
-import SnapKit
 
-class MiddlePanelView: NSView, NSTableViewDataSource, NSTableViewDelegate {
+class MiddlePanelView: NSView {
     
-    let gitHubService: GitHubService = GitHubService()
-    var tableView: NSTableView!
-    var scrollView: NSScrollView!
-    var listData: [StarredModel] = []
-    var cellHeights: [[String: CGFloat]] = []
+    var gsSearchBarView: GSSearchBar!
+    var tableView: GSTableView!
+    var scrollView: GSScrollView!
 
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
@@ -29,38 +26,21 @@ class MiddlePanelView: NSView, NSTableViewDataSource, NSTableViewDelegate {
         self.wantsLayer = true
         self.layer?.backgroundColor = NSColor(hue:0.13, saturation:0.02, brightness:0.98, alpha:1.00).cgColor
         
-        scrollView = NSScrollView()
-        scrollView.borderType = .noBorder
-        scrollView.backgroundColor = .clear
-        scrollView.drawsBackground = false
-        scrollView.scrollerStyle = .overlay
-        scrollView.hasVerticalScroller = true
-        scrollView.scrollerKnobStyle = .dark
-        scrollView.verticalScrollElasticity = .automatic
-        scrollView.autohidesScrollers = true
-        
-        self.addSubview(scrollView)
-        scrollView.snp.makeConstraints { (make) in
-            make.top.equalTo(self).offset(0)
-            make.right.equalTo(self).offset(0)
-            make.bottom.equalTo(self).offset(0)
-            make.left.equalTo(self).offset(0)
+        gsSearchBarView = GSSearchBar()
+        self.addSubview(gsSearchBarView)
+        gsSearchBarView.snp.makeConstraints { (make) in
+            make.top.right.left.equalTo(self).offset(0)
+            make.height.equalTo(42)
         }
         
-        tableView = NSTableView(frame: .zero)
-        tableView.rowSizeStyle = .custom
-        tableView.backgroundColor = .clear
-        tableView.allowsEmptySelection = true
-        tableView.allowsMultipleSelection = false
-        tableView.allowsColumnSelection = false
-        tableView.intercellSpacing = NSSize(width: 0, height: 0)
-        tableView.selectionHighlightStyle = .none
-
-        tableView.headerView = nil
-        tableView.addTableColumn(NSTableColumn(identifier: .init("GSColumn")))
-        tableView.delegate = self
-        tableView.dataSource = self
-
+        scrollView = GSScrollView()
+        self.addSubview(scrollView)
+        scrollView.snp.makeConstraints { (make) in
+            make.top.equalTo(self).offset(30)
+            make.right.bottom.left.equalTo(self).offset(0)
+        }
+        
+        tableView = GSTableView(frame: .zero)
         scrollView.documentView = tableView
     }
     
@@ -68,71 +48,26 @@ class MiddlePanelView: NSView, NSTableViewDataSource, NSTableViewDelegate {
         super.init(coder: decoder)
     }
     
-    func refresh(finished: @escaping () -> Void) {
-        gitHubService.getStarreds { (resp) in
-            self.listData = resp
-            
-            let animation = NSTableView.AnimationOptions.effectFade.rawValue | NSTableView.AnimationOptions.slideDown.rawValue | NSTableView.AnimationOptions.slideUp.rawValue
-            
-            for i in 0..<self.listData.count {
-                self.tableView.beginUpdates()
-                self.tableView.insertRows(at: IndexSet.init(integer: i), withAnimation: NSTableView.AnimationOptions(rawValue: animation))
-                self.tableView.endUpdates()
-            }
-            
-            finished()
+    func refresh(repos: [RepoModel]) {
+        self.tableView.listData = []
+        self.tableView.reloadData()
+        
+        self.tableView.listData = repos
+        
+        let animation = NSTableView.AnimationOptions.effectFade.rawValue | NSTableView.AnimationOptions.slideDown.rawValue | NSTableView.AnimationOptions.slideUp.rawValue
+        
+        for i in 0..<repos.count {
+            self.tableView.beginUpdates()
+            self.tableView.insertRows(at: IndexSet.init(integer: i), withAnimation: NSTableView.AnimationOptions(rawValue: animation))
+            self.tableView.endUpdates()
         }
     }
     
-    func tableViewColumnDidResize(_ notification: Notification) {
+    func reload() {
         self.tableView.reloadData()
     }
     
-    func numberOfRows(in tableView: NSTableView) -> Int {
-        return listData.count
-    }
-    
-    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
-        let rowData = self.listData[row]
-        
-        let cell = GSCellView(repoName: rowData.name, repoDescription: rowData.description)
-        let height = cell.getHeight(width: self.tableView.frame.size.width - CGFloat(Common.cellViewPadding * 2))
-
-        cellHeights.append(height)
-        return height["totalHeight"]!
-    }
-    
-    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        var cell = tableView.makeView(withIdentifier: .init(Common.cellViewIdentifier), owner: self) as? GSCellView
-  
-        if (cell == nil) {
-            cell = GSCellView()
-        }
-        
-        let rowData = self.listData[row]
-
-        cell?.repoName.stringValue = rowData.name
-        cell?.repoDescription.stringValue = rowData.description
-        cell?.makeLayout()
-        
-        cell?.repoDescription.snp.updateConstraints({ (make) in
-            make.top.equalTo(cell!).offset(CGFloat(cellHeights[row]["nameHeight"]!) + CGFloat(Common.cellViewPadding) + 2)
-        })
-        
-        return cell
-    }
-    
-    func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
-        let lastRowIndex = tableView.selectedRow
-        let currentRow = tableView.rowView(atRow: row, makeIfNecessary: false)
-        
-        if (lastRowIndex >= 0 ) {
-            tableView.rowView(atRow: lastRowIndex, makeIfNecessary: false)?.backgroundColor = .clear
-            
-        }
-        
-        currentRow?.backgroundColor = NSColor(hue:0.12, saturation:0.03, brightness:0.94, alpha:1.00)
-        
-        return true
+    @objc func repoAddTag() {        
+        self.tableView.selectRowIndexes(IndexSet(integer: self.tableView.clickedRow), byExtendingSelection: false)
     }
 }

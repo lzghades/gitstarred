@@ -12,4 +12,5 @@ target 'GitStarred' do
   pod 'Moya-ObjectMapper'
   pod 'Alamofire', '~> 4.5'
   pod 'SQLite.swift', '~> 0.11'
+  pod 'Kingfisher', '~> 4.0'
 end

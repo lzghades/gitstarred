@@ -39,7 +39,7 @@ class PreferenceUserView: NSView {
             make.left.equalTo(self).offset(20)
         }
         
-        userLabel = GSLabel(color: .gray1, fontSize: 14.0)
+        userLabel = GSLabel(color: .gray, fontSize: 14.0)
         userLabel.isHidden = true
         userLabel.lineBreakMode = .byTruncatingTail
         userLabel.sizeToFit()
@@ -83,7 +83,7 @@ class PreferenceUserView: NSView {
             make.height.equalTo(28)
         }
         
-        if let user = sessionService.getUser() {
+        if let user = sessionService.getSession() {
             self.currentUser = user
             renderToggle(isLogined: true)
             userLabel.stringValue = user.name

@@ -9,17 +9,7 @@
 class UserService {
     
     let userDao: UserDAO = UserDAO()
-    
-//    func login(name: String) {
-//        let userDao = UserDAO()
-//        _ = userDao.insert(_name: name)
-//    }
-//
-//    func logout(id: Int64) {
-//        let userDao = UserDAO()
-//        userDao.delete(_id: id)
-//    }
-    
+
     func create(username: String) -> UserModel? {
         return userDao.insert(name: username)
     }
@@ -30,5 +20,9 @@ class UserService {
     
     func getUser(id: Int64) -> UserModel? {
         return userDao.findById(id: id)
+    }
+    
+    func updateSyncDate(id: Int64, date: Int64) {
+        userDao.updateSyncDate(id: id, date: date)
     }
 }

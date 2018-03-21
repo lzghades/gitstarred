@@ -11,9 +11,11 @@ import Foundation
 class UserModel {
     var id: Int64!
     var name: String!
+    var syncDate: Int64!
     
-    init(id: Int64, name: String) {
+    init(id: Int64, name: String, syncDate: Int64) {
         self.id = id
         self.name = name
+        self.syncDate = syncDate
     }
 }

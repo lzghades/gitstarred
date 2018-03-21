@@ -10,6 +10,9 @@
 		0F1AD951202A9481005CFB38 /* PreferenceUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1AD950202A9481005CFB38 /* PreferenceUserView.swift */; };
 		0F1AD953202A9A9A005CFB38 /* PreferenceShortcutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1AD952202A9A9A005CFB38 /* PreferenceShortcutsView.swift */; };
 		0F1AD955202AE727005CFB38 /* GSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1AD954202AE727005CFB38 /* GSButton.swift */; };
+		0F1B213E204E943500CAE38E /* AddTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1B213D204E943500CAE38E /* AddTagViewController.swift */; };
+		0F1B4757204CDA9E007B85B3 /* RepoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1B4756204CDA9E007B85B3 /* RepoDAO.swift */; };
+		0F1B4759204CF272007B85B3 /* RepoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F1B4758204CF272007B85B3 /* RepoService.swift */; };
 		0F2955EA20216CBA00AFF8E2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F2955C520216CBA00AFF8E2 /* Info.plist */; };
 		0F2955EB20216CBA00AFF8E2 /* KRActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955C620216CBA00AFF8E2 /* KRActivityIndicatorAnimationAudioEqualizer.swift */; };
 		0F2955EC20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955C720216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallBeat.swift */; };
@@ -46,19 +49,23 @@
 		0F29560B20216CBA00AFF8E2 /* KRActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955E620216CBA00AFF8E2 /* KRActivityIndicatorAnimationTriangleSkewSpin.swift */; };
 		0F29560C20216CBA00AFF8E2 /* KRActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955E720216CBA00AFF8E2 /* KRActivityIndicatorShape.swift */; };
 		0F29560D20216CBA00AFF8E2 /* KRActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2955E920216CBA00AFF8E2 /* KRActivityIndicatorView.swift */; };
+		0F2BBBFC2050E1E200CAAF7F /* GSTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2BBBFB2050E1E200CAAF7F /* GSTableView.swift */; };
 		0F3D740D2005E0AA00B578E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D740C2005E0AA00B578E3 /* AppDelegate.swift */; };
 		0F3D74112005E0AA00B578E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F3D74102005E0AA00B578E3 /* Assets.xcassets */; };
 		0F3D74142005E0AA00B578E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F3D74122005E0AA00B578E3 /* Main.storyboard */; };
-		0F3D74202005F76C00B578E3 /* StarredModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D741F2005F76C00B578E3 /* StarredModel.swift */; };
+		0F3D74202005F76C00B578E3 /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D741F2005F76C00B578E3 /* RepoModel.swift */; };
 		0F3D74222005F7A000B578E3 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D74212005F7A000B578E3 /* BaseService.swift */; };
 		0F3D74242005FA9C00B578E3 /* BaseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D74232005FA9C00B578E3 /* BaseDAO.swift */; };
 		0F3D74262006042600B578E3 /* UserDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D74252006042600B578E3 /* UserDAO.swift */; };
 		0F3D74282006149500B578E3 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D74272006149500B578E3 /* UserService.swift */; };
+		0F4100112056496700299425 /* TagAndRepoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4100102056496700299425 /* TagAndRepoDAO.swift */; };
 		0F42786B202BE9740099EF01 /* SessionDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42786A202BE9740099EF01 /* SessionDAO.swift */; };
 		0F42786D202BED6F0099EF01 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F42786C202BED6F0099EF01 /* SessionService.swift */; };
 		0F4E89002019BA8F00D22BCF /* GSIconItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4E88FF2019BA8F00D22BCF /* GSIconItem.swift */; };
 		0F648257200F24F700C2A4EF /* PreferenceWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F648256200F24F700C2A4EF /* PreferenceWindowController.swift */; };
 		0F73B072201EE5DA00FB1D42 /* IconItemDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73B071201EE5DA00FB1D42 /* IconItemDelegate.swift */; };
+		0F8A1CCD205BC68E00149949 /* GSSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8A1CCC205BC68E00149949 /* GSSearchBar.swift */; };
+		0F8A1CCF205F9ABD00149949 /* ListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8A1CCE205F9ABD00149949 /* ListDelegate.swift */; };
 		0FB529AE202DEAEA00B08939 /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0FB529AD202DEAEA00B08939 /* readme.txt */; };
 		0FB5D5BE2020478D00DDC5E8 /* GSCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB5D5BD2020478D00DDC5E8 /* GSCellView.swift */; };
 		0FB784E6200E023000030B7A /* BaseWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB784E5200E023000030B7A /* BaseWindowController.swift */; };
@@ -66,17 +73,23 @@
 		0FBA4FF6201191FA0076B5DA /* GSIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA4FF5201191FA0076B5DA /* GSIconButton.swift */; };
 		0FBA4FF8201192540076B5DA /* GSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA4FF7201192540076B5DA /* GSTextField.swift */; };
 		0FBA4FFA2011F44B0076B5DA /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA4FF92011F44B0076B5DA /* GitHubService.swift */; };
+		0FCFC199205A73C50065496E /* TagDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCFC198205A73C50065496E /* TagDelegate.swift */; };
+		0FD3640C205928AF00D2783F /* GSMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD3640B205928AF00D2783F /* GSMenuItem.swift */; };
+		0FDFC649205279E100D3F642 /* GSScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDFC648205279E100D3F642 /* GSScrollView.swift */; };
+		0FDFC64B2053F8AD00D3F642 /* GSTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDFC64A2053F8AD00D3F642 /* GSTagView.swift */; };
+		0FE3AAC5204F95C800DB6D19 /* TagDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3AAC4204F95C800DB6D19 /* TagDAO.swift */; };
+		0FE3AAC7204FB2C400DB6D19 /* TagService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3AAC6204FB2C400DB6D19 /* TagService.swift */; };
+		0FE3AAC9204FD27D00DB6D19 /* GSBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE3AAC8204FD27D00DB6D19 /* GSBadge.swift */; };
 		0FE52E5820298A8500C86F89 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE52E5720298A8500C86F89 /* AuthViewController.swift */; };
 		0FE52E5A2029F7CE00C86F89 /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE52E592029F7CE00C86F89 /* SessionModel.swift */; };
 		0FE52E5C2029F89700C86F89 /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE52E5B2029F89700C86F89 /* TagModel.swift */; };
-		0FE52E5E2029F8C300C86F89 /* TagStarredRelaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE52E5D2029F8C300C86F89 /* TagStarredRelaModel.swift */; };
 		0FE7EFED201862E80020FC4E /* LeftPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE7EFEC201862E80020FC4E /* LeftPanelView.swift */; };
 		0FE7EFEF2018645F0020FC4E /* MiddlePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE7EFEE2018645F0020FC4E /* MiddlePanelView.swift */; };
 		0FE7EFF1201865000020FC4E /* RightPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE7EFF0201865000020FC4E /* RightPanelView.swift */; };
 		0FE865FE20106F9A002CF369 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE865FD20106F9A002CF369 /* Constants.swift */; };
 		0FE866012010A23C002CF369 /* GSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE866002010A23C002CF369 /* GSLabel.swift */; };
 		0FF450E7201702DC007FCCAD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF450E6201702DC007FCCAD /* BaseViewController.swift */; };
-		0FF87A04201C8DD100369DA8 /* RefreshListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF87A03201C8DD100369DA8 /* RefreshListDelegate.swift */; };
+		0FF87A04201C8DD100369DA8 /* SyncReposDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF87A03201C8DD100369DA8 /* SyncReposDelegate.swift */; };
 		741172F806D5CC60A3AE6D93 /* Pods_GitStarred.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5C7BEDA6A53B58890DD9EF /* Pods_GitStarred.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +97,9 @@
 		0F1AD950202A9481005CFB38 /* PreferenceUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceUserView.swift; sourceTree = "<group>"; };
 		0F1AD952202A9A9A005CFB38 /* PreferenceShortcutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceShortcutsView.swift; sourceTree = "<group>"; };
 		0F1AD954202AE727005CFB38 /* GSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSButton.swift; sourceTree = "<group>"; };
+		0F1B213D204E943500CAE38E /* AddTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTagViewController.swift; sourceTree = "<group>"; };
+		0F1B4756204CDA9E007B85B3 /* RepoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDAO.swift; sourceTree = "<group>"; };
+		0F1B4758204CF272007B85B3 /* RepoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoService.swift; sourceTree = "<group>"; };
 		0F2955C520216CBA00AFF8E2 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F2955C620216CBA00AFF8E2 /* KRActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
 		0F2955C720216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallBeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorAnimationBallBeat.swift; sourceTree = "<group>"; };
@@ -121,22 +137,26 @@
 		0F2955E720216CBA00AFF8E2 /* KRActivityIndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorShape.swift; sourceTree = "<group>"; };
 		0F2955E820216CBA00AFF8E2 /* KRActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRActivityIndicatorView.h; sourceTree = "<group>"; };
 		0F2955E920216CBA00AFF8E2 /* KRActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KRActivityIndicatorView.swift; sourceTree = "<group>"; };
+		0F2BBBFB2050E1E200CAAF7F /* GSTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSTableView.swift; sourceTree = "<group>"; };
 		0F3D74092005E0AA00B578E3 /* GitStarred.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitStarred.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3D740C2005E0AA00B578E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F3D74102005E0AA00B578E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F3D74132005E0AA00B578E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F3D74152005E0AA00B578E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F3D74162005E0AA00B578E3 /* GitStarred.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitStarred.entitlements; sourceTree = "<group>"; };
-		0F3D741F2005F76C00B578E3 /* StarredModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarredModel.swift; sourceTree = "<group>"; };
+		0F3D741F2005F76C00B578E3 /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
 		0F3D74212005F7A000B578E3 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		0F3D74232005FA9C00B578E3 /* BaseDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDAO.swift; sourceTree = "<group>"; };
 		0F3D74252006042600B578E3 /* UserDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDAO.swift; sourceTree = "<group>"; };
 		0F3D74272006149500B578E3 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		0F4100102056496700299425 /* TagAndRepoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagAndRepoDAO.swift; sourceTree = "<group>"; };
 		0F42786A202BE9740099EF01 /* SessionDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDAO.swift; sourceTree = "<group>"; };
 		0F42786C202BED6F0099EF01 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
 		0F4E88FF2019BA8F00D22BCF /* GSIconItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSIconItem.swift; sourceTree = "<group>"; };
 		0F648256200F24F700C2A4EF /* PreferenceWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceWindowController.swift; sourceTree = "<group>"; };
 		0F73B071201EE5DA00FB1D42 /* IconItemDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconItemDelegate.swift; sourceTree = "<group>"; };
+		0F8A1CCC205BC68E00149949 /* GSSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSSearchBar.swift; sourceTree = "<group>"; };
+		0F8A1CCE205F9ABD00149949 /* ListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDelegate.swift; sourceTree = "<group>"; };
 		0FB529AD202DEAEA00B08939 /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		0FB5D5BD2020478D00DDC5E8 /* GSCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSCellView.swift; sourceTree = "<group>"; };
 		0FB784E5200E023000030B7A /* BaseWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWindowController.swift; sourceTree = "<group>"; };
@@ -144,17 +164,23 @@
 		0FBA4FF5201191FA0076B5DA /* GSIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSIconButton.swift; sourceTree = "<group>"; };
 		0FBA4FF7201192540076B5DA /* GSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSTextField.swift; sourceTree = "<group>"; };
 		0FBA4FF92011F44B0076B5DA /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
+		0FCFC198205A73C50065496E /* TagDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDelegate.swift; sourceTree = "<group>"; };
+		0FD3640B205928AF00D2783F /* GSMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSMenuItem.swift; sourceTree = "<group>"; };
+		0FDFC648205279E100D3F642 /* GSScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSScrollView.swift; sourceTree = "<group>"; };
+		0FDFC64A2053F8AD00D3F642 /* GSTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSTagView.swift; sourceTree = "<group>"; };
+		0FE3AAC4204F95C800DB6D19 /* TagDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDAO.swift; sourceTree = "<group>"; };
+		0FE3AAC6204FB2C400DB6D19 /* TagService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagService.swift; sourceTree = "<group>"; };
+		0FE3AAC8204FD27D00DB6D19 /* GSBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSBadge.swift; sourceTree = "<group>"; };
 		0FE52E5720298A8500C86F89 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		0FE52E592029F7CE00C86F89 /* SessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
 		0FE52E5B2029F89700C86F89 /* TagModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
-		0FE52E5D2029F8C300C86F89 /* TagStarredRelaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagStarredRelaModel.swift; sourceTree = "<group>"; };
 		0FE7EFEC201862E80020FC4E /* LeftPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftPanelView.swift; sourceTree = "<group>"; };
 		0FE7EFEE2018645F0020FC4E /* MiddlePanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddlePanelView.swift; sourceTree = "<group>"; };
 		0FE7EFF0201865000020FC4E /* RightPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightPanelView.swift; sourceTree = "<group>"; };
 		0FE865FD20106F9A002CF369 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0FE866002010A23C002CF369 /* GSLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSLabel.swift; sourceTree = "<group>"; };
 		0FF450E6201702DC007FCCAD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		0FF87A03201C8DD100369DA8 /* RefreshListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshListDelegate.swift; sourceTree = "<group>"; };
+		0FF87A03201C8DD100369DA8 /* SyncReposDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncReposDelegate.swift; sourceTree = "<group>"; };
 		163EC300458E3642F5FFF6F5 /* Pods-GitStarred.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitStarred.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitStarred/Pods-GitStarred.release.xcconfig"; sourceTree = "<group>"; };
 		4A5C7BEDA6A53B58890DD9EF /* Pods_GitStarred.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitStarred.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E8E6277D27A16A993C9713 /* Pods-GitStarred.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitStarred.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GitStarred/Pods-GitStarred.debug.xcconfig"; sourceTree = "<group>"; };
@@ -276,11 +302,10 @@
 		0F3D741C2005E2E800B578E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0F3D741F2005F76C00B578E3 /* StarredModel.swift */,
+				0F3D741F2005F76C00B578E3 /* RepoModel.swift */,
 				0FBA4FF3201187470076B5DA /* UserModel.swift */,
 				0FE52E592029F7CE00C86F89 /* SessionModel.swift */,
 				0FE52E5B2029F89700C86F89 /* TagModel.swift */,
-				0FE52E5D2029F8C300C86F89 /* TagStarredRelaModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,6 +317,8 @@
 				0F3D74272006149500B578E3 /* UserService.swift */,
 				0FBA4FF92011F44B0076B5DA /* GitHubService.swift */,
 				0F42786C202BED6F0099EF01 /* SessionService.swift */,
+				0F1B4758204CF272007B85B3 /* RepoService.swift */,
+				0FE3AAC6204FB2C400DB6D19 /* TagService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -302,6 +329,9 @@
 				0F3D74232005FA9C00B578E3 /* BaseDAO.swift */,
 				0F3D74252006042600B578E3 /* UserDAO.swift */,
 				0F42786A202BE9740099EF01 /* SessionDAO.swift */,
+				0F1B4756204CDA9E007B85B3 /* RepoDAO.swift */,
+				0FE3AAC4204F95C800DB6D19 /* TagDAO.swift */,
+				0F4100102056496700299425 /* TagAndRepoDAO.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -316,6 +346,7 @@
 				0FE52E5720298A8500C86F89 /* AuthViewController.swift */,
 				0F1AD950202A9481005CFB38 /* PreferenceUserView.swift */,
 				0F1AD952202A9A9A005CFB38 /* PreferenceShortcutsView.swift */,
+				0F1B213D204E943500CAE38E /* AddTagViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -345,6 +376,12 @@
 				0F4E88FF2019BA8F00D22BCF /* GSIconItem.swift */,
 				0FB5D5BD2020478D00DDC5E8 /* GSCellView.swift */,
 				0F1AD954202AE727005CFB38 /* GSButton.swift */,
+				0FE3AAC8204FD27D00DB6D19 /* GSBadge.swift */,
+				0F2BBBFB2050E1E200CAAF7F /* GSTableView.swift */,
+				0FDFC648205279E100D3F642 /* GSScrollView.swift */,
+				0FDFC64A2053F8AD00D3F642 /* GSTagView.swift */,
+				0FD3640B205928AF00D2783F /* GSMenuItem.swift */,
+				0F8A1CCC205BC68E00149949 /* GSSearchBar.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -352,8 +389,10 @@
 		0FF87A02201C8D9300369DA8 /* Delegate */ = {
 			isa = PBXGroup;
 			children = (
-				0FF87A03201C8DD100369DA8 /* RefreshListDelegate.swift */,
+				0FF87A03201C8DD100369DA8 /* SyncReposDelegate.swift */,
 				0F73B071201EE5DA00FB1D42 /* IconItemDelegate.swift */,
+				0FCFC198205A73C50065496E /* TagDelegate.swift */,
+				0F8A1CCE205F9ABD00149949 /* ListDelegate.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -475,6 +514,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GitStarred/Pods-GitStarred-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya-ObjectMapper/Moya_ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/MoyaSugar/MoyaSugar.framework",
@@ -486,6 +526,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya_ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoyaSugar.framework",
@@ -524,12 +565,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F1B4757204CDA9E007B85B3 /* RepoDAO.swift in Sources */,
 				0FBA4FF8201192540076B5DA /* GSTextField.swift in Sources */,
 				0F3D74282006149500B578E3 /* UserService.swift in Sources */,
 				0F29560D20216CBA00AFF8E2 /* KRActivityIndicatorView.swift in Sources */,
 				0F29560320216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScaleParty.swift in Sources */,
 				0F2955F820216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
 				0FBA4FFA2011F44B0076B5DA /* GitHubService.swift in Sources */,
+				0FDFC649205279E100D3F642 /* GSScrollView.swift in Sources */,
 				0F42786D202BED6F0099EF01 /* SessionService.swift in Sources */,
 				0FE865FE20106F9A002CF369 /* Constants.swift in Sources */,
 				0FF450E7201702DC007FCCAD /* BaseViewController.swift in Sources */,
@@ -542,15 +585,18 @@
 				0FE52E5A2029F7CE00C86F89 /* SessionModel.swift in Sources */,
 				0F42786B202BE9740099EF01 /* SessionDAO.swift in Sources */,
 				0FBA4FF6201191FA0076B5DA /* GSIconButton.swift in Sources */,
+				0F8A1CCF205F9ABD00149949 /* ListDelegate.swift in Sources */,
 				0F29560B20216CBA00AFF8E2 /* KRActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */,
 				0F2955F320216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulseRise.swift in Sources */,
 				0F2955F020216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallGridBeat.swift in Sources */,
+				0F2BBBFC2050E1E200CAAF7F /* GSTableView.swift in Sources */,
 				0F648257200F24F700C2A4EF /* PreferenceWindowController.swift in Sources */,
 				0FBA4FF4201187470076B5DA /* UserModel.swift in Sources */,
 				0F2955F120216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallGridPulse.swift in Sources */,
 				0F29560520216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
 				0F29560020216CBA00AFF8E2 /* KRActivityIndicatorAnimationCubeTransition.swift in Sources */,
 				0F2955F520216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallRotate.swift in Sources */,
+				0FE3AAC7204FB2C400DB6D19 /* TagService.swift in Sources */,
 				0F4E89002019BA8F00D22BCF /* GSIconItem.swift in Sources */,
 				0F2955EC20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallBeat.swift in Sources */,
 				0FB784E6200E023000030B7A /* BaseWindowController.swift in Sources */,
@@ -559,35 +605,43 @@
 				0FE52E5C2029F89700C86F89 /* TagModel.swift in Sources */,
 				0F2955F220216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallPulse.swift in Sources */,
 				0F1AD953202A9A9A005CFB38 /* PreferenceShortcutsView.swift in Sources */,
+				0FE3AAC9204FD27D00DB6D19 /* GSBadge.swift in Sources */,
 				0F2955FA20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
 				0F29560820216CBA00AFF8E2 /* KRActivityIndicatorAnimationPacman.swift in Sources */,
 				0F29560620216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
 				0F2955FF20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBlank.swift in Sources */,
 				0F29560C20216CBA00AFF8E2 /* KRActivityIndicatorShape.swift in Sources */,
+				0F8A1CCD205BC68E00149949 /* GSSearchBar.swift in Sources */,
 				0F2955EF20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */,
 				0FE7EFEF2018645F0020FC4E /* MiddlePanelView.swift in Sources */,
+				0F4100112056496700299425 /* TagAndRepoDAO.swift in Sources */,
 				0F29560A20216CBA00AFF8E2 /* KRActivityIndicatorAnimationSquareSpin.swift in Sources */,
 				0F29560920216CBA00AFF8E2 /* KRActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
 				0F29560120216CBA00AFF8E2 /* KRActivityIndicatorAnimationDelegate.swift in Sources */,
 				0F29560220216CBA00AFF8E2 /* KRActivityIndicatorAnimationLineScale.swift in Sources */,
+				0F1B4759204CF272007B85B3 /* RepoService.swift in Sources */,
 				0F2955F620216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallRotateChase.swift in Sources */,
 				0FE7EFED201862E80020FC4E /* LeftPanelView.swift in Sources */,
 				0F1AD951202A9481005CFB38 /* PreferenceUserView.swift in Sources */,
+				0FE3AAC5204F95C800DB6D19 /* TagDAO.swift in Sources */,
 				0F2955F920216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallScaleRipple.swift in Sources */,
 				0F2955EB20216CBA00AFF8E2 /* KRActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
 				0F3D74222005F7A000B578E3 /* BaseService.swift in Sources */,
-				0F3D74202005F76C00B578E3 /* StarredModel.swift in Sources */,
-				0FE52E5E2029F8C300C86F89 /* TagStarredRelaModel.swift in Sources */,
+				0F3D74202005F76C00B578E3 /* RepoModel.swift in Sources */,
+				0FD3640C205928AF00D2783F /* GSMenuItem.swift in Sources */,
+				0FDFC64B2053F8AD00D3F642 /* GSTagView.swift in Sources */,
 				0F2955FE20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
 				0F3D740D2005E0AA00B578E3 /* AppDelegate.swift in Sources */,
 				0F2955ED20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallClipRotate.swift in Sources */,
 				0FE52E5820298A8500C86F89 /* AuthViewController.swift in Sources */,
 				0F29560720216CBA00AFF8E2 /* KRActivityIndicatorAnimationOrbit.swift in Sources */,
 				0FE7EFF1201865000020FC4E /* RightPanelView.swift in Sources */,
+				0FCFC199205A73C50065496E /* TagDelegate.swift in Sources */,
 				0F2955FC20216CBA00AFF8E2 /* KRActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
 				0F73B072201EE5DA00FB1D42 /* IconItemDelegate.swift in Sources */,
 				0FE866012010A23C002CF369 /* GSLabel.swift in Sources */,
-				0FF87A04201C8DD100369DA8 /* RefreshListDelegate.swift in Sources */,
+				0F1B213E204E943500CAE38E /* AddTagViewController.swift in Sources */,
+				0FF87A04201C8DD100369DA8 /* SyncReposDelegate.swift in Sources */,
 				0F3D74242005FA9C00B578E3 /* BaseDAO.swift in Sources */,
 				0F1AD955202AE727005CFB38 /* GSButton.swift in Sources */,
 			);

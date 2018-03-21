@@ -18,4 +18,5 @@ struct Common {
     static let iconItemIconSize = 24.0
     static let cellViewIdentifier = "GSCellView"
     static let cellViewPadding = 10.0
+    static let searchbarIdentifier = "GSSearchBar"
 }
